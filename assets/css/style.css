@@ -11,3 +11,15 @@
 .form-control {
   border-color: var(--bs-warning);
 }
+
+.nav-link,
+.dropdown-item {
+  /* border: 1px solid black; */
+}
+
+@media (max-width: 992px) {
+  .dropdown-item {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+}
