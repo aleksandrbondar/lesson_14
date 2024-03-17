@@ -36,7 +36,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Menu 1
             </a>
-            <ul class="dropdown-menu bg-warning-subtle my-3 pe-3">
+            <ul class="dropdown-menu bg-warning-subtle mx-3 px-3">
               <li><a class="dropdown-item" href="#">Menu item 1</a></li>
               <li><a class="dropdown-item" href="#">Menu item 2</a></li>
               <li><a class="dropdown-item" href="#">Menu item 3</a></li>
@@ -52,7 +52,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Menu 2
             </a>
-            <ul class="dropdown-menu bg-warning-subtle my-3 pe-3">
+            <ul class="dropdown-menu bg-warning-subtle mx-3 px-3">
               <li><a class="dropdown-item" href="#">Menu item 1</a></li>
               <li><a class="dropdown-item" href="#">Menu item 2</a></li>
               <li><a class="dropdown-item" href="#">Menu item 3</a></li>
@@ -180,16 +180,13 @@
           <h2 class="text-center m-3">Bootstrap Slider</h2>
 
           <!-- SLIDER -->
-          <div class="carousel slide" data-bs-ride="carousel">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouseIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -205,12 +202,10 @@
                 <img src="assets/img/4.png" class="d-block w-100" alt="Bootstrap info slide 4">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
           </div>
