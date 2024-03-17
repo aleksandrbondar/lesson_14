@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Lesson 14</title>
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container">
+
+      <!-- LOGO -->
+      <a class="navbar-brand p-3" href="#">Bootstrap</a>
+
+      <!-- BURGER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NAVBAR -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav text-uppercase fs-5">
+          <!-- MAIN ACTIVE -->
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="#">Main</a>
+          </li>
+
+          <!-- MENU 1 -->
+          <li class="nav-item dropdown mx-3">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu 1
+            </a>
+            <ul class="dropdown-menu bg-warning-subtle my-3 pe-3">
+              <li><a class="dropdown-item" href="#">Menu item 1</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 2</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 3</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 4</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 5</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 6</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 7</a></li>
+            </ul>
+          </li>
+
+          <!-- MENU 2 -->
+          <li class="nav-item dropdown mx-3">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu 2
+            </a>
+            <ul class="dropdown-menu bg-warning-subtle my-3 pe-3">
+              <li><a class="dropdown-item" href="#">Menu item 1</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 2</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 3</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 4</a></li>
+              <li><a class="dropdown-item" href="#">Menu item 5</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row d-flex">
+
+        <!-- ACORDION CONTAINER -->
+        <section class="col-lg-6 col-md-12 bg-warning-subtle p-3">
+          <h1 class="m-3">This is't for me <img class="m-3" src="assets/img/sad.svg" width="40" alt="sad"></h1>
+          <!-- ACORDION -->
+          <div class="accordion">
+
+            <!-- ITEM 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Advantages and Disadvantages of Bootstrap
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>1. Ease of Use</strong>
+                  <p>Bootstrap provides a plethora of pre-built components and styles, making the process of creating
+                    web
+                    pages quick and convenient. It includes ready-to-use classes for creating grids, buttons, forms,
+                    navigation, and other interface elements.</p>
+                  <strong>2. Responsiveness</strong>
+                  <p>Bootstrap includes a grid system with support for responsive design, allowing you to create
+                    websites
+                    that look great on various devices and screen sizes.</p>
+                  <strong>3. Modularity</strong>
+                  <p>The framework is built on modular principles, allowing developers to choose only the components and
+                    styles they need, minimizing the size of the final CSS file.</p>
+                  <strong>4. Browser Support</strong>
+                  <p>Bootstrap ensures compatibility with a wide range of browsers, including the latest versions of
+                    Chrome, Firefox, Safari, Edge, and Internet Explorer.</p>
+                  <strong>5. Community and Documentation</strong>
+                  <p>Bootstrap has an active developer community that supports the framework and provides extensive
+                    documentation, examples, and guides.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Disadvantages of Bootstrap
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>1. Size</strong>
+                  <p>Bootstrap has a relatively large size, especially if you use all its components and styles, which
+                    can affect the loading time of web pages.</p>
+                  <strong>2. Design Limitations</strong>
+                  <p>Using Bootstrap can lead to your website looking too standard or similar to other sites using the
+                    framework.</p>
+                  <strong>3. Need for Style Overrides</strong>
+                  <p>Sometimes you need to override Bootstrap styles to adapt them to the specific requirements of your
+                    project, which can be inconvenient.</p>
+                  <strong>4. JavaScript Dependency</strong>
+                  <p>Some Bootstrap components require the inclusion of JavaScript to function, which can increase
+                    development complexity and resource consumption.</p>
+                  <strong>5. Update Requirements</strong>
+                  <p>Bootstrap requires regular updates to remain compatible with the latest browser versions and
+                    maintain security.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Where i can use bootstrap
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  Bootstrap's versatility shines in various web development scenarios:
+                  <ul>
+                    <li>Rapid Prototyping: Quickly build prototypes with pre-built components and layouts.</li>
+                    <li>Responsive Design: Ensure flawless website rendering across all devices with Bootstrap's
+                      mobile-first
+                      approach.</li>
+                    <li> Customizable UIs: Combine Bootstrap's components with your CSS for unique designs.
+                      Front-End Consistency: Maintain a uniform user experience across your web app.</li>
+                    <li>E-commerce & CMS: Bootstrap's components are well-suited for e-commerce sites and content
+                      management
+                      systems.</li>
+                    <li>Landing Pages & SPAs: Create effective landing pages and enhance user experience in single-page
+                      applications.</li>
+                    <li>Admin Panels & Dashboards: Build user-friendly admin interfaces with Bootstrap's grid system and
+                      components.</li>
+                    <li>Basic Web App Interactions: Implement dropdowns, modals, and other interactive elements.</li>
+                    <li>Bootstrap offers a solid foundation for building modern, responsive, and user-friendly web
+                      experiences.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDER CONTAINER -->
+        <aside class="col-lg-3 col-md-6 order-lg-first bg-warning-subtle p-3">
+
+          <!-- HEADER OF SLIDER -->
+          <h2 class="text-center m-3">Bootstrap Slider</h2>
+
+          <!-- SLIDER -->
+          <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouseIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/1.png" class="d-block w-100" alt="Bootstrap info slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/2.png" class="d-block w-100" alt="Bootstrap info slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/3.png" class="d-block w-100" alt="Bootstrap info slide 3">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/4.png" class="d-block w-100" alt="Bootstrap info slide 4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </aside>
+
+        <!-- FORM CONTAINER -->
+        <aside class="col-lg-3 col-md-6 bg-warning-subtle p-3">
+          <h2 class="m-3">Login form</h2>
+          <form action="https://tests.fomenko.top/echo/index.php" method="post">
+            <div class="mb-3 w-100">
+              <label for="login" class="form-label">Login</label>
+              <input type="text" class="form-control" id="login" placeholder="User Name" required>
+            </div>
+            <div class="mb-3 w-100">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+            <div class="mb-3 w-100">
+              <label for="mail" class="form-label">@mail</label>
+              <input type="email" class="form-control" id="mail" placeholder="mail@example.com" required>
+            </div>
+            <div class="mb-3 w-100">
+              <label for="birthday" class="form-label">Birthday</label>
+              <input type="date" class="form-control" id="birthday">
+            </div>
+            <div class="mb-3 w-100">
+              <label for="userinfo" class="form-label">About me</label>
+              <textarea class="form-control" id="userinfo" rows="5" placeholder="Enter text here"></textarea>
+            </div>
+            <div class="mb-3 w-100">
+              <button type="submit" class="btn btn-outline-warning mb-3 text-black w-100">Login</button>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-warning p-3 text-center">
+    <div class="container"> Copyright &copy; Footer</div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
