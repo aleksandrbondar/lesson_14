@@ -21,5 +21,6 @@
   .dropdown-item {
     padding: 8px;
     margin-bottom: 16px;
+    padding-left: 16px;
   }
 }
